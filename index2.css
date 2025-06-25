@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  background-color: #e0e0e0;
+  font-family: sans-serif;
+}
+
+.ContenedorGeneral {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #000;
+  color: white;
+  border-radius: 8px;
+  display: grid;
+  gap: 1.5rem;
+}
+
+
+.Panel2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+
+.Caja2 ul {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.Caja2 li {
+  padding: 0.8rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Caja2 li:hover {
+  background-color: #333;
+  transform: scale(1.03);
+}
+
+.Caja2 a {
+  text-decoration: none;
+  color: rgb(3, 252, 177);
+}
+
+
+.ContenedorImagenes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-items: center;
+}
+
+
+.ContenedorImagenes img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ContenedorImagenes img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+.CajaGit img {
+  max-width: 1000px;
+  transition: transform 0.3s ease;
+}
+
+.CajaGit img:hover {
+  transform: scale(1.1);
+}
+
+.CajaGit {
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .ContenedorImagenes {
+    grid-template-columns: 1fr;
+  }
+}
