@@ -13,6 +13,9 @@ body {
   border-radius: 8px;
   display: grid;
   gap: 1.5rem;
+
+  min-height: 100vh;  
+  box-sizing: border-box;
 }
 
 
@@ -37,6 +40,7 @@ body {
   padding: 0.8rem;
   border-radius: 6px;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 30px;
 }
 
 .Caja2 li:hover {
@@ -50,12 +54,19 @@ body {
 }
 
 
-.ContenedorImagenes {
+.ContenedorGeneral {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #000;
+  color: white;
+  border-radius: 8px;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  justify-items: center;
+  gap: 1.5rem;
+  min-height: 100vh;  
+  box-sizing: border-box;
 }
+
 
 
 .ContenedorImagenes img {
@@ -64,6 +75,7 @@ body {
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 13rem;
 }
 
 .ContenedorImagenes img:hover {
