@@ -1,0 +1,184 @@
+
+body {
+  margin: 0;
+  background-color: #e0e0e0; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.Seccion3 {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #000; 
+  color: white;
+  border-radius: 8px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: grid;
+  gap: 2rem;
+}
+
+
+.Panel3 {
+  width: 100%;
+  height: 48px;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  font-size: 1.3rem;
+}
+
+
+.Contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+
+.IMG img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.IMG img:hover {
+  box-shadow: 0 8px 16px rgba(252, 2, 2, 0.4);
+}
+
+
+.Texto {
+  max-width: 500px;
+  cursor: pointer;
+}
+
+.Texto p {
+  font-size: 1.1rem;
+  color: #05ec9f;
+}
+
+
+.Inicio {
+  text-align: center;
+}
+
+.Inicio img {
+  max-width: 100%;
+}
+
+
+.Proyectos img {
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+
+.Caja4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-items: center;
+}
+
+.Caja4 img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.Caja4 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(243, 2, 2, 0.3);
+}
+
+
+.Progra img,
+.Me img,
+.Contac img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+}
+
+.IconosPrincipales {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.icono {
+  width: 45px;
+  height: 45px;
+  opacity: 0.7;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.icono:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+
+.footer {
+  margin-top: 2rem;
+}
+
+.Linea {
+  border-top: 2px solid white;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.Parrafo2 {
+  font-size: 1.8rem;
+  color: blanchedalmond;
+}
+
+
+@media screen and (max-width: 768px) {
+  .Contenido {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .IMG img {
+    max-width: 90%;
+  }
+
+  .Texto p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .Caja4 {
+    grid-template-columns: 1fr;
+  }
+
+  .icono {
+    width: 40px;
+    height: 40px;
+  }
+
+  .Progra img,
+  .Me img,
+  .Contac img {
+    max-width: 90%;
+  }
+}
