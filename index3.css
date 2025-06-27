@@ -1,21 +1,23 @@
 
-body {
+html, body {
   margin: 0;
-  background-color: #e0e0e0; 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000; 
 }
 
-
 .Seccion3 {
+  width: 100%;
   max-width: 768px;
   margin: 0 auto;
   padding: 1rem;
-  background-color: #000; 
+  background-color: #000;
   color: white;
-  border-radius: 8px;
-  box-sizing: border-box;
   min-height: 100vh;
-  display: grid;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
